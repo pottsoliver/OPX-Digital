@@ -1,0 +1,83 @@
+{
+  "brand": {
+    "name": "YOUR NAME",
+    "descriptor": "PERSONAL PORTFOLIO",
+    "email": "hello@example.com",
+    "availability": "OPEN TO OPPORTUNITIES"
+  },
+  "home": {
+    "eyebrow": "INDEPENDENT DIGITAL CREATOR",
+    "headline": "Ideas made\ntangible.",
+    "intro": "I’m a curious, hands-on creator who enjoys turning good ideas into useful digital things. This is where I share what I make, what I’m learning and what I’m working on.",
+    "artCaption": "BASED IN THE UK · WORKING EVERYWHERE",
+    "footerNote": "A WORK IN PROGRESS, ALWAYS."
+  },
+  "about": {
+    "eyebrow": "THE PERSON BEHIND THE PROJECTS",
+    "headline": "Curious by nature.\nPractical by design.",
+    "paragraphs": [
+      "I like understanding how things work, finding a better way to do them and making ideas real. My interests sit somewhere between technology, design and problem-solving.",
+      "This site is a home for the things I build, the skills I’m developing and the projects I’m proud to share."
+    ],
+    "tags": ["Technology", "Design", "Photography", "Problem solving", "Learning"],
+    "note": "Always interested in a new challenge and a good conversation."
+  },
+  "work": {
+    "eyebrow": "A FEW THINGS I’VE BEEN MAKING",
+    "headline": "Made with\nintent.",
+    "intro": "A changing collection of experiments, practical builds and creative projects. Some are finished, some are still evolving.",
+    "projects": [
+      {
+        "number": "01",
+        "title": "A better workflow",
+        "category": "DIGITAL PRODUCT",
+        "description": "A practical tool designed to make everyday tasks feel simpler, clearer and more organised.",
+        "label": "CASE STUDY",
+        "url": "",
+        "style": "coral"
+      },
+      {
+        "number": "02",
+        "title": "Visual stories",
+        "category": "CREATIVE WORK",
+        "description": "A collection of photographs, visual experiments and moments worth keeping.",
+        "label": "VIEW GALLERY",
+        "url": "",
+        "style": "blue"
+      },
+      {
+        "number": "03",
+        "title": "The next idea",
+        "category": "IN PROGRESS",
+        "description": "A space for the next experiment. New projects will find their place here as they take shape.",
+        "label": "COMING SOON",
+        "url": "",
+        "style": "green"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "SOMETHING IN MIND?",
+    "headline": "Let's make\nsomething good.",
+    "intro": "Have a project, an idea or just want to say hello? Drop me a message. I’m always happy to hear from interesting people.",
+    "footer": "THANKS FOR STOPPING BY.",
+    "socials": [
+      { "label": "Instagram", "url": "https://instagram.com/" },
+      { "label": "LinkedIn", "url": "https://linkedin.com/" },
+      { "label": "GitHub", "url": "https://github.com/" }
+    ]
+  },
+  "theme": {
+    "ink": "#20272b",
+    "paper": "#f1eee7",
+    "accent": "#d96f4b",
+    "home": "#f1eee7",
+    "about": "#dce8df",
+    "work": "#d9e3eb",
+    "contact": "#20272b",
+    "homeText": "#20272b",
+    "aboutText": "#20272b",
+    "workText": "#20272b",
+    "contactText": "#f5f1e9"
+  }
+}

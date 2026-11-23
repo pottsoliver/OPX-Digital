@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#20272b">
+  <title>Website editor — Your Studio</title>
+  <link rel="stylesheet" href="assets/editor.css">
+  <script defer src="assets/editor.js"></script>
+</head>
+<body>
+  <header class="editor-header">
+    <a class="editor-brand" href="index.html"><span class="editor-mark">✳</span> WEBSITE EDITOR</a>
+    <div class="editor-actions"><a class="quiet-link" href="index.html" target="_blank" rel="noopener">OPEN WEBSITE ↗</a><button class="primary-button" id="download-config">DOWNLOAD CONFIG</button></div>
+  </header>
+  <main class="editor-layout">
+    <section class="intro-card">
+      <p class="eyebrow">YOUR SITE. YOUR RULES.</p>
+      <h1>Make it<br><em>yours.</em></h1>
+      <p>Change your website's wording, sections, project cards, links and colours here. You can also edit the full configuration directly. No account or subscription needed.</p>
+      <div class="tip"><span>↳</span><span><strong>How saving works</strong><br>Save a browser preview to see changes on this computer, then download the config file and replace <code>site-content.json</code> in your website folder when you're ready to publish.</span></div>
+    </section>
+    <section class="workbench">
+      <div class="workbench-head"><div><p class="eyebrow">CONTENT SETTINGS</p><h2>Edit your site</h2></div><span class="status" id="status">READY</span></div>
+      <div class="tabs" role="tablist" aria-label="Editor modes">
+        <button class="tab is-selected" id="quick-tab" role="tab" aria-selected="true" aria-controls="quick-panel">Quick editor</button>
+        <button class="tab" id="json-tab" role="tab" aria-selected="false" aria-controls="json-panel">Full configuration</button>
+      </div>
+      <section class="tab-panel" id="quick-panel" role="tabpanel" aria-labelledby="quick-tab">
+        <div class="field-grid">
+          <label class="field"><span>Website / brand name</span><input id="brand-name" type="text"></label>
+          <label class="field"><span>Small descriptor</span><input id="brand-descriptor" type="text"></label>
+          <label class="field"><span>Contact email</span><input id="brand-email" type="email"></label>
+          <label class="field"><span>Availability message</span><input id="brand-availability" type="text"></label>
+          <label class="field full"><span>Home headline <small>Use a new line to split the heading.</small></span><textarea id="home-headline" rows="2"></textarea></label>
+          <label class="field full"><span>Home introduction</span><textarea id="home-intro" rows="3"></textarea></label>
+          <label class="field full"><span>About headline <small>Use a new line to split the heading.</small></span><textarea id="about-headline" rows="2"></textarea></label>
+          <label class="field full"><span>About paragraphs <small>Put each paragraph on its own line.</small></span><textarea id="about-paragraphs" rows="4"></textarea></label>
+          <label class="field full"><span>Interests / skills <small>Separate each item with a comma.</small></span><input id="about-tags" type="text"></label>
+          <label class="field full"><span>About note</span><input id="about-note" type="text"></label>
+          <label class="field full"><span>Work introduction</span><textarea id="work-intro" rows="2"></textarea></label>
+          <label class="field full"><span>Contact headline <small>Use a new line to split the heading.</small></span><textarea id="contact-headline" rows="2"></textarea></label>
+          <label class="field full"><span>Contact introduction</span><textarea id="contact-intro" rows="2"></textarea></label>
+          <label class="field full"><span>Projects <small>Edit as JSON. Keep the square brackets and commas.</small></span><textarea id="projects-json" class="code-field" rows="13" spellcheck="false"></textarea></label>
+          <label class="field full"><span>Social links <small>Edit as JSON. Use full https:// links.</small></span><textarea id="socials-json" class="code-field" rows="7" spellcheck="false"></textarea></label>
+          <div class="field full"><span>Website colours</span><div class="colour-grid">
+            <label>Accent <input id="theme-accent" type="color"></label>
+            <label>Home <input id="theme-home" type="color"></label>
+            <label>About <input id="theme-about" type="color"></label>
+            <label>Work <input id="theme-work" type="color"></label>
+            <label>Contact <input id="theme-contact" type="color"></label>
+          </div></div>
+        </div>
+        <div class="editor-footer"><button class="secondary-button" id="reload-quick">RELOAD FROM CONFIG</button><button class="primary-button" id="apply-quick">APPLY QUICK CHANGES</button></div>
+      </section>
+      <section class="tab-panel" id="json-panel" role="tabpanel" aria-labelledby="json-tab" hidden>
+        <p class="panel-help">This is the entire site content file. You can edit any text, label, link, card or colour. This is the most powerful editing option. Be careful to keep the JSON punctuation valid.</p>
+        <textarea id="full-json" class="code-field json-editor" spellcheck="false" aria-label="Full site configuration"></textarea>
+        <div class="editor-footer"><label class="secondary-button import-button">IMPORT CONFIG<input type="file" id="import-config" accept=".json,application/json" hidden></label><button class="secondary-button" id="format-json">FORMAT JSON</button><button class="primary-button" id="apply-json">APPLY CONFIG</button></div>
+      </section>
+      <div class="bottom-actions"><button class="preview-button" id="save-preview">SAVE PREVIEW ON THIS COMPUTER ↗</button><button class="reset-button" id="reset-config">RESET TO STARTER</button></div>
+      <p class="editor-footnote">This editor runs entirely in your browser. It does not upload your content anywhere. Download your configuration after editing to keep a copy.</p>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

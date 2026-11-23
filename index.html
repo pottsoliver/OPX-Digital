@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1eee7">
+  <meta name="description" content="A personal portfolio and collection of projects.">
+  <title>Your Name — Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/site.js"></script>
+</head>
+<body class="site-body">
+  <a class="skip-link" href="#panel-content">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Go to home">
+      <span class="wordmark-mark" aria-hidden="true">✳</span>
+      <span id="brand-name">YOUR NAME</span>
+    </a>
+    <div class="header-right">
+      <span class="availability"><span class="availability-dot"></span><span id="availability-text">OPEN TO OPPORTUNITIES</span></span>
+      <a class="header-contact" id="header-email" href="mailto:hello@example.com">LET'S TALK <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main class="panels" id="panels" aria-label="Portfolio sections">
+    <section class="panel panel-home is-active" id="home" data-panel="home" aria-labelledby="home-tab">
+      <button class="panel-tab" id="home-tab" type="button" aria-controls="home-content" aria-expanded="true">
+        <span class="tab-number">01</span><span class="tab-label">HOME</span><span class="tab-arrow" aria-hidden="true">↗</span>
+      </button>
+      <div class="panel-content" id="home-content" tabindex="-1">
+        <div class="content-topline"><span id="home-eyebrow">INDEPENDENT DIGITAL CREATOR</span><span class="topline-rule"></span><span>01 / 04</span></div>
+        <div class="home-main">
+          <div class="home-copy">
+            <p class="overline">A LITTLE BIT OF THIS. A LOT OF CURIOSITY.</p>
+            <h1 id="home-headline">Ideas made<br><em>tangible.</em></h1>
+            <p class="intro" id="home-intro">I’m a curious, hands-on creator who enjoys turning good ideas into useful digital things. This is where I share what I make, what I’m learning and what I’m working on.</p>
+            <div class="button-row">
+              <button class="button button-dark" type="button" data-open-panel="work">EXPLORE MY WORK <span aria-hidden="true">↗</span></button>
+              <button class="button button-outline" type="button" data-open-panel="contact">GET IN TOUCH <span aria-hidden="true">→</span></button>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Abstract geometric artwork" role="img">
+            <div class="hero-art-ring ring-one"></div><div class="hero-art-ring ring-two"></div>
+            <div class="hero-art-core">✳</div>
+            <span class="art-label art-label-top">MAKE / TEST / REFINE</span>
+            <span class="art-label art-label-bottom" id="home-art-caption">BASED IN THE UK · WORKING EVERYWHERE</span>
+            <span class="art-coordinate">52° N<br>00° E</span>
+          </div>
+        </div>
+        <div class="home-footer"><span>SCROLL LESS. MAKE MORE.</span><span class="footer-line"></span><span id="home-footer-note">A WORK IN PROGRESS, ALWAYS.</span></div>
+      </div>
+      <div class="panel-wash" aria-hidden="true"></div>
+    </section>
+
+    <section class="panel panel-about" id="about" data-panel="about" aria-labelledby="about-tab">
+      <button class="panel-tab" id="about-tab" type="button" aria-controls="about-content" aria-expanded="false">
+        <span class="tab-number">02</span><span class="tab-label">ABOUT</span><span class="tab-arrow" aria-hidden="true">↗</span>
+      </button>
+      <div class="panel-content" id="about-content" tabindex="-1">
+        <div class="content-topline"><span id="about-eyebrow">THE PERSON BEHIND THE PROJECTS</span><span class="topline-rule"></span><span>02 / 04</span></div>
+        <div class="section-heading-row">
+          <p class="section-kicker">A LITTLE CONTEXT</p>
+          <h2 id="about-headline">Curious by nature.<br><em>Practical by design.</em></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-prose" id="about-paragraphs">
+            <p>I like understanding how things work, finding a better way to do them and making ideas real. My interests sit somewhere between technology, design and problem-solving.</p>
+            <p>This site is a home for the things I build, the skills I’m developing and the projects I’m proud to share.</p>
+          </div>
+          <aside class="about-side">
+            <p class="mini-label">THINGS I ENJOY</p>
+            <ul class="tag-list" id="about-tags"><li>Technology</li><li>Design</li><li>Photography</li><li>Problem solving</li><li>Learning</li></ul>
+            <div class="about-note"><span class="note-symbol">↳</span><span id="about-note">Always interested in a new challenge and a good conversation.</span></div>
+          </aside>
+        </div>
+        <div class="section-bottom"><span>02 — ABOUT</span><span class="bottom-rule"></span><span>MORE THAN A CV.</span></div>
+      </div>
+      <div class="panel-wash" aria-hidden="true"></div>
+    </section>
+
+    <section class="panel panel-work" id="work" data-panel="work" aria-labelledby="work-tab">
+      <button class="panel-tab" id="work-tab" type="button" aria-controls="work-content" aria-expanded="false">
+        <span class="tab-number">03</span><span class="tab-label">WORK</span><span class="tab-arrow" aria-hidden="true">↗</span>
+      </button>
+      <div class="panel-content" id="work-content" tabindex="-1">
+        <div class="content-topline"><span id="work-eyebrow">A FEW THINGS I’VE BEEN MAKING</span><span class="topline-rule"></span><span>03 / 04</span></div>
+        <div class="work-heading"><div><p class="section-kicker">SELECTED PROJECTS</p><h2 id="work-headline">Made with<br><em>intent.</em></h2></div><p class="work-intro" id="work-intro">A changing collection of experiments, practical builds and creative projects. Some are finished, some are still evolving.</p></div>
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+        <div class="section-bottom"><span>03 — SELECTED WORK</span><span class="bottom-rule"></span><span>GOOD IDEAS DESERVE A GO.</span></div>
+      </div>
+      <div class="panel-wash" aria-hidden="true"></div>
+    </section>
+
+    <section class="panel panel-contact" id="contact" data-panel="contact" aria-labelledby="contact-tab">
+      <button class="panel-tab" id="contact-tab" type="button" aria-controls="contact-content" aria-expanded="false">
+        <span class="tab-number">04</span><span class="tab-label">CONTACT</span><span class="tab-arrow" aria-hidden="true">↗</span>
+      </button>
+      <div class="panel-content" id="contact-content" tabindex="-1">
+        <div class="content-topline"><span id="contact-eyebrow">SOMETHING IN MIND?</span><span class="topline-rule"></span><span>04 / 04</span></div>
+        <div class="contact-main">
+          <p class="section-kicker">THE NEXT GOOD THING STARTS SOMEWHERE</p>
+          <h2 id="contact-headline">Let's make<br><em>something good.</em></h2>
+          <p class="contact-intro" id="contact-intro">Have a project, an idea or just want to say hello? Drop me a message. I’m always happy to hear from interesting people.</p>
+          <a class="contact-email" id="contact-email" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+          <div class="social-area"><span class="mini-label">ELSEWHERE ON THE INTERNET</span><div class="social-links" id="social-links"></div></div>
+        </div>
+        <div class="contact-footer"><span id="contact-footer">THANKS FOR STOPPING BY.</span><span class="footer-line"></span><span>© <span id="year"></span> <span id="footer-brand">YOUR NAME</span></span></div>
+      </div>
+      <div class="panel-wash" aria-hidden="true"></div>
+    </section>
+  </main>
+  <div class="mobile-hint" aria-hidden="true">TAP A SECTION TO EXPLORE <span>↓</span></div>
+  <noscript><p class="noscript">This portfolio needs JavaScript enabled to load its editable content.</p></noscript>
+</body>
+</html>
